@@ -21,5 +21,11 @@ def ScoreFinder(players, scores, name):
     if name in players:
         x = players.find(name)
         print('OUTPUT', name, 'got a score of', scores[x])
+    else:
+        PrintOutput('player not found')
         
+def Union(list1, list2):
+    list3 = list1 + list2
+    list3 = list(dict.fromkeys(list3))
+    return list3
 
