@@ -17,4 +17,9 @@ def UpdateString(string1, string2, index):
 def FinalWordCount(givenList, givenString):
     return givenList.count(givenString)
     
+def ScoreFinder(players, scores, name):
+    if name in players:
+        x = players.find(name)
+        print('OUTPUT', name, 'got a score of', scores[x])
+        
 
