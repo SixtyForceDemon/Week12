@@ -29,3 +29,16 @@ def Union(list1, list2):
     list3 = list(dict.fromkeys(list3))
     return list3
 
+def Intersection(list1, list2):
+    list3 = []
+    if len(list1) > len(list2):
+        for element in list1:
+            if element in list2:
+                list3.append(element)
+    else:
+        for element in list2:
+            if element in list1:
+                list3.append(element)
+    return list3
+    
+
